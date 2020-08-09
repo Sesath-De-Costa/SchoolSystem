@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.schoolSystem.controller.StudentFormController">
+    <children>
+        <TextField fx:id="txtId" layoutX="8.0" layoutY="65.0" promptText="Student Id"/>
+        <TextField fx:id="txtName" layoutX="180.0" layoutY="65.0" promptText="Student Name"/>
+        <TextField fx:id="txtAge" layoutX="352.0" layoutY="65.0" prefHeight="25.0" prefWidth="62.0" promptText="Age"/>
+        <TextField fx:id="txtAddress" layoutX="431.0" layoutY="65.0" promptText="Student Address"/>
+        <Button fx:id="btnSave" layoutX="398.0" layoutY="116.0" mnemonicParsing="false"
+                onAction="#btnSaveActionPeformed" text="Save"/>
+        <Button layoutX="463.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnUpdateActionPeformed"
+                text="Update"/>
+        <Button layoutX="528.0" layoutY="116.0" mnemonicParsing="false" onAction="#btnDeleteActionPeformed"
+                text="Delete"/>
+        <TableView fx:id="tblStudent" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="574.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="Id"/>
+                <TableColumn fx:id="colName" prefWidth="209.0" text="Name"/>
+                <TableColumn fx:id="colAge" prefWidth="87.0" text="Age"/>
+                <TableColumn fx:id="colAddress" prefWidth="202.0" text="Address"/>
+            </columns>
+        </TableView>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="14.0" prefHeight="17.0"
+               prefWidth="141.0" text="Student System">
+            <font>
+                <Font name="Arial Bold" size="14.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
